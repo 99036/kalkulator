@@ -121,7 +121,10 @@ public class Main_java {
 
 				} while (!n.equals("koniec"));
 			} else if (w == 2) {
-				File plik = new File("plik2");
+				String pp;
+				System.out.println("Podaj ścieżkę do pliku:");
+				pp=napis.nextLine();
+				File plik = new File(pp);
 				try {
 					FileReader odczyt = new FileReader(plik);
 					BufferedReader buf = new BufferedReader(odczyt);
